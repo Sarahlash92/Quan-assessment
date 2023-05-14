@@ -5,6 +5,7 @@ import {
   Container,
 } from "@mui/material";
 import { NavigationBar } from "./components/navBar/NavigationBar";
+import { QuestionBox } from "./components/questionBox/QuestionBox";
 import "./App.css";
 
 /* Setting up 
@@ -31,6 +32,18 @@ function App() {
       <CssBaseline />
       <div className="App">
         <NavigationBar />
+        <Container
+          maxWidth={false}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+            backgroundColor: 'secondary.main'
+          }}
+        >
+          <QuestionBox />
+        </Container>
       </div>
     </ThemeProvider>
   );
