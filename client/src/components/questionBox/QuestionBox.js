@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
+import { LikertScale } from "./LikertScale";
 
 export const QuestionBox = () => {
   return (
@@ -29,6 +30,7 @@ export const QuestionBox = () => {
           I have been eating and drinking healthily
         </Typography>
       </Box>
+      <LikertScale/>
     </Box>
   );
 };
