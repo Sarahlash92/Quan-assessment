@@ -1,4 +1,10 @@
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import {
+  CssBaseline,
+  ThemeProvider,
+  createTheme,
+  Container,
+} from "@mui/material";
+import { NavigationBar } from "./components/navBar/NavigationBar";
 import "./App.css";
 
 /* Setting up 
@@ -23,7 +29,9 @@ function App() {
   return (
     <ThemeProvider theme={quanTheme}>
       <CssBaseline />
-      <div className="App"></div>
+      <div className="App">
+        <NavigationBar />
+      </div>
     </ThemeProvider>
   );
 }
