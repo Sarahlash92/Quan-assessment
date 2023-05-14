@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
-import { Typography } from "@mui/material";
 import { LikertScale } from "./LikertScale";
+import { QuestionUI } from "./QuestionUI";
+
 
 export const QuestionBox = () => {
   return (
@@ -12,24 +13,7 @@ export const QuestionBox = () => {
 
       }}
     >
-      <Box sx={{ paddingX: 10, paddingY: 7 }}>
-        <Typography
-          variant="h4"
-          sx={{
-            fontFamily: "Rasa",
-            fontWeight: "bold",
-            color: "text.secondary",
-          }}
-        >
-          During the past 2 weeks
-        </Typography>
-        <Typography
-          variant="h4"
-          sx={{ fontFamily: "Rasa", fontWeight: "bold" }}
-        >
-          I have been eating and drinking healthily
-        </Typography>
-      </Box>
+      <QuestionUI />
       <LikertScale/>
     </Box>
   );
